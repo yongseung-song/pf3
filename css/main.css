@@ -1,0 +1,250 @@
+main, section {
+  height: 100%;
+}
+/* 메뉴스토리 */
+#menustory {
+  height: 100%;
+  background-color: #eee;
+}
+#menustory .wrap {
+  height: 100%;
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+#menustory h2 {
+  letter-spacing: -3.5px;
+  position: relative;
+  z-index: 2;
+}
+#menustory h2::after{
+  content: "";
+  background-color: #d50037;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 20px;
+}
+#menustory ul.list {
+  position: relative;
+  padding-top: 50px;
+}
+#menustory ul.list li {
+}
+#menustory ul.list>li {
+  padding-bottom: 30px;
+}
+#menustory ul.list li h3 {
+  width: 40%;
+  font-size: 21px;
+}
+#menustory ul.list li h3 a {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+}
+#menustory ul.list li:not(:nth-child(1)) h3 a{
+  font-size: 0;
+}
+#menustory ul.list li h3 a span {
+  width: fit-content;
+  border-bottom: 3px solid;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+#menustory ul.list li:not(:nth-child(1)) h3 a span{
+  color: #aaa;
+  border: none;
+}
+#menustory ul.list li div.listin{
+  position: absolute;
+  left: 44%;
+  top: -40px;
+  width: 60%;
+}
+
+#menustory ul.list li ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+#menustory ul.list li ul li {
+  width: 15%;
+  position: relative;
+}
+#menustory ul.list li ul li:nth-child(1){
+  width: 55%;
+}
+#menustory ul.list li ul li:not(:nth-child(1)) h4{
+  display: none;  
+}
+#menustory ul.list li ul li a {
+}
+#menustory ul.list li ul li a img {
+  width: 100%;
+}
+#menustory ul.list li ul li h4 {
+  background-color: black;
+  color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 150px);
+  width: 300px;
+  text-align: center;
+  line-height: 3;
+  font-weight: 300;
+}
+#menustory span.control {
+  width: 300px;
+  height: 50px;
+  display: Flex;
+  position: absolute;
+  bottom: -22px;
+  left: calc(50% - 321px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  box-sizing: border-box;
+}
+#menustory li:not(:nth-child(1)) span.control{
+  display: none;
+}
+#menustory span.control a{
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#menustory span.control a:nth-child(1)::after {
+  content: "";
+  display: block;
+  transition: all 0.5s;
+  width: 13px;
+  height: 3px;
+  transform: translateY(6px) skewX(-50deg);
+  border-left: 3px solid white;
+  border-bottom: 2px solid white;
+  border-top: 1.5px solid transparent;
+  border-right: 2.5px solid transparent;
+}
+#menustory span.control a:nth-child(2)::after {
+  content: "";
+  display: block;
+  transition: all 0.5s;
+  width: 13px;
+  height: 3px;
+  transform: translateY(6px) skewX(50deg);
+  border-right: 3px solid white;
+  border-bottom: 2px solid white;
+  border-top: 1.5px solid transparent;
+  border-left: 2.5px solid transparent;
+}
+#alist {
+  background-image: linear-gradient(350.6deg, #ecd2bb 34%, #e0bea2 34.2%);
+}
+#alist .wrap {
+  height: 100%;
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/alist.png);
+  background-repeat: no-repeat;
+  background-position: 93% 97%;
+  background-size: 46%;
+}
+#alist .wrap hgroup {
+}
+#alist .wrap hgroup h2 {
+}
+#alist .wrap hgroup h2:after {
+  content: "";
+  background-color: #d50037;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 20px;
+}
+#alist .wrap hgroup h3 {
+  padding: 60px 0;
+  line-height: 1.2;
+}
+#alist .wrap hgroup h4 {
+}
+#alist .wrap p {
+  padding-top: 24px;
+  font-size: 18px;
+  color: #534d49;
+  width: 42%;
+  line-height: 1.4;
+  font-weight: 400;
+}
+#support {
+}
+#support .wrap {
+  height: 100%;
+  width: 100%;
+  padding-left: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#support h2 {
+  position: relative;
+}
+#support .list {
+  margin-left: 35%;
+  width: 65%;
+  overflow: hidden;
+  margin-top: -40px;
+  position: relative;
+}
+#support .list ul {
+  display: flex;
+  width: 400%;
+}
+#support .list ul li {
+  width: 25%;
+}
+#support .list ul li:before{
+  content: "";
+  width: 350px;
+  height: 350px;
+  background: url(../img/support_1.jpg);
+  background-size: cover;
+  float: left;
+}
+#support .list ul li h3 {
+  float: left;
+  width: calc(100% - 350px);
+  padding-left: 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+#support .list ul li h3 a {
+}
+#support .list ul li p {
+  float: left;
+  width: calc(100% - 350px);
+  padding-left: 40px;
+  box-sizing: border-box;
+  color: #777;
+  padding-right: 130px;
+}
+#support .list span.control {
+  position: absolute;
+  bottom: 20px;
+  left: 390px;
+  display: block;
+  width: 195px;
+  line-height: 2.2;
+}
+#support .list span.control a {
+}

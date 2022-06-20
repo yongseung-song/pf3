@@ -1,0 +1,144 @@
+#title{
+  height: 100%;
+  /*! background-color: #f61e83; */
+  /*! background-image:url(../img/title_1.png), linear-gradient(-5.4deg, #fbf5f7 49.8%, #937e64 50%); */
+  /*! background-position: center,center; */
+  /*! background-repeat: no-repeat; */
+  /*! background-size:25%,100%; */
+  /*! transition: all 0.7s 0.2s; */
+  /*! display: flex; */
+  /*! justify-content: center; */
+  /*! text-align: center; */
+  flex-direction: column;
+}
+#title:hover{
+  background-size:17%,100%;
+}
+#title::before{
+  
+}
+#title .wrap{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#title .wrap::before{
+}
+#title:hover .wrap::before{
+  font-size: 90px;
+  opacity: 1;
+  transform: translate(-150px) rotate(-5.4deg);
+}
+#title ul.slide{
+
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+}
+#title ul.slide li{
+  height: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size:27%,100%;
+  transition: all 0.7s 0.2s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+}
+#title ul.slide li:nth-child(1){
+  background-color: #f61e83;
+  background-image: url(../img/title_1.png), linear-gradient(-5.4deg, #fffdfd 49.8%, #937e64 50%);
+}
+#title ul.slide li:nth-child(1)::before{
+  content: "로스팅 플랜트";
+  color: #fff;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.7s 0.2s;
+  text-shadow: 1px 2px 5px #444;
+  display: block;
+}
+#title ul.slide li:nth-child(2){
+  background-color: #f61e83;
+  background-image: url(../img/title2.png);
+  background-size: cover;
+}
+#title ul.slide li:nth-child(2)::before{
+    content: "디저트 플랜트";
+  color: #fff;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.7s 0.2s;
+  text-shadow: 1px 2px 5px #444;
+  display: block;
+}
+
+#title span.control{
+  
+  width: 200px;
+  height: 50px;
+  display: Flex;
+  background-color: #333;
+  position: absolute;
+  bottom: 35px;
+  left: calc(50% - 100px);
+  opacity: 0.7;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+#title span.control a{
+  
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#title span.control a:nth-child(1):before{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateY(3px) translateX(-1px) rotate(45deg);
+  transform-origin: 100% 100%;
+  transition: all 0.5s;
+}
+#title span.control a:nth-child(1)::after {
+  content: "";
+  width: 24px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+    transition: all 0.5s;
+}
+#title span.control a:nth-child(1):hover::before, #title span.control a:nth-child(1):hover::after{
+  background-color: orange;
+}
+#title span.control a:nth-child(2)::before {
+    content: "";
+    width: 24px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    transform: translateY(10px);
+    transition: all 0.5s;
+}
+#title span.control a:nth-child(2):after{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateX(23px) translateY(-0px) rotate(-45deg);
+  transform-origin: 0 100%;
+  transition: all 0.5s;
+}
+#title span.control a:nth-child(2):hover::before, #title span.control a:nth-child(2):hover::after{
+  background-color: orange;
+}

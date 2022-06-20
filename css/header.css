@@ -1,0 +1,109 @@
+header {
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+  left: calc((100% - 1100px) / 2);
+  top: 0;
+  /*! background-color: rgba(0,0,0,0.5); */
+  width: 1100px;
+  z-index: 1;
+}
+header .wrap{
+  
+  padding: 0px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  /*! background: #eee; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}
+header h1 {
+  
+  /*! float: left; */
+  text-align: center;
+}
+header h1 a {
+  
+  color: #fff;
+}
+header h1 a span{
+  font-size: 12px;
+  font-variant-caps: all-petite-caps;
+}
+header ul.gnb {
+  
+  /*! float: left; */
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+header ul.gnb li {
+  
+}
+header ul.gnb li a {
+  display: block;
+  padding: 0px 18px;
+  color: #fff;
+  line-height: 1.7;
+}
+header ul.gnb li a:hover{
+  
+  color: orange;
+}
+header a.allmenu {
+  
+  /*! float: right; */
+  margin-left: 20px;
+  color: #fff;
+  font-size: 0;
+  border: 2px solid #d60037;
+  width: 7px;
+  height: 7px;
+  position: relative;
+  display: block;
+}
+header a.allmenu span{
+  display: block;
+  width: 7px;
+  height: 7px;
+  border 2px solid #fff;
+  position: absolute;
+  border: 2px solid white;
+  left: -15px;
+  top: -2px;
+}
+header a.allmenu span:hover{
+  
+  border-color: #d60037;
+}
+header a.allmenu span::before{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid white;
+  position: absolute;
+  left: -2px;
+  top: 11px;
+}
+header a.allmenu span:hover::before {
+  
+  border-color: #d60037;
+}
+header a.allmenu span::after{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid white;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+}
+header a.allmenu span:hover::after{
+  
+  border-color: #d60037;
+}
